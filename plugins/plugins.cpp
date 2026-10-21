@@ -357,10 +357,13 @@ extern Model* modelTestVCF;
 #define modelNode modelCVfunkNode
 #define modelSteps modelCVfunkSteps
 #define modelTuner modelCVfunkTuner
+#define modelVega modelCVfunkVega
+
 #include "CVfunk/src/plugin.hpp"
 #undef modelSteps
 #undef modelNode
 #undef modelTuner
+#undef modelVega
 
 
 // ChowDSP
@@ -2089,6 +2092,7 @@ static void initStatic__CVfunk()
         #define modelSteps modelCVfunkSteps
         #define modelNode modelCVfunkNode
         #define modelTuner modelCVfunkTuner
+        #define modelVega modelCVfunkVega
         p->addModel(modelSteps);
         p->addModel(modelEnvelopeArray);
         p->addModel(modelPentaSequencer);
@@ -2129,6 +2133,12 @@ static void initStatic__CVfunk()
         p->addModel(modelOnion);
         p->addModel(modelStrata);
         p->addModel(modelTriton);
+        p->addModel(modelTwang);
+        p->addModel(modelMala);
+        p->addModel(modelHotPot);
+        p->addModel(modelFuzzy);
+        p->addModel(modelVega);
+        #undef modelVega        
         #undef modelTuner
         #undef modelNode
         #undef modelSteps
