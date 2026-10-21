@@ -2133,6 +2133,9 @@ static void initStatic__CVfunk()
         p->addModel(modelOnion);
         p->addModel(modelStrata);
         p->addModel(modelTriton);
+        p->addModel(modelAulos);
+        p->addModel(modelGlass);
+        p->addModel(modelHaze);                
         p->addModel(modelTwang);
         p->addModel(modelMala);
         p->addModel(modelHotPot);
